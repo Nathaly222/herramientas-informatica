@@ -22,4 +22,8 @@ class StudentService {
     fun findById(id: Long): Student? {
         return studentRepository.findById(id).orElse(null)
     }
+
+    fun findByName(lastname: String): List<Student> {
+        return studentRepository.findByLastname(lastname)
+    }
 }
