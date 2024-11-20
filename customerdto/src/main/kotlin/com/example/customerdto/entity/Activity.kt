@@ -30,5 +30,5 @@ class Activity {
     @Column(name = "created_at", updatable = false, nullable = false)  // Asegúrate de que createdAt no se pueda actualizar
     var createdAt: LocalDateTime = LocalDateTime.now()
 
-    // Se pueden agregar más métodos según sea necesario
+
 }
